@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<templates>
+
+<template autoinsert="true" context="org.python.pydev.editor.templates.python" deleted="false" description="odoo__openerp__" enabled="true" name="odoo__openerp__">
+# -*- coding: utf-8 -*-
+##############################################################################
+#
+{
+    'name': "${name}",
+    'version': "1.0",
+    'author': "coronado edgar",
+    'category': "${category}",
+    'description': """
+This module provide :
+====================================
+
+    Module that covers:
+--------------------------------------------
+    * Feature one
+    * Feature two
+""",
+    'website': "https://coronadoedgar.wordpress.com",
+    'depends': ["base"],
+    'data':[],
+    'demo_xml': [],
+    'installable': True,
+    'auto_install': False,
+}
+# vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
+</template>
+
+<template autoinsert="true" context="org.python.pydev.editor.templates.python" deleted="false" description="odoo_file" enabled="true" name="odoo_file">
+# -*- coding: utf-8 -*-
+##############################################################################
+
+from openerp.osv import fields, osv
+import time
+</template>
+
+<template autoinsert="true" context="org.python.pydev.editor.templates.python" deleted="false" description="odoo_class" enabled="true" name="odoo_class">
+class ${ClassName}(osv.osv):
+	_name = '${openerpmodel}'
+	_description = '${openerpmodel}'
+
+${ClassName}()
+</template>
+
+<template autoinsert="true" context="org.python.pydev.editor.templates.python" deleted="false" description="odoo_columns" enabled="true" name="odoo_columns">
+	_columns = {
+		
+	}
+</template>
+
+
+</templates>
